@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="/assets/icons/ADF-logo.svg" type="image/x-icon"><title>ADF: Add New Project</title><link rel="stylesheet" href="/assets/asset..css" /></head><body><main class="main"><section class="sidebar"><div class="sidebar__logo"><img src="/assets/images/ADF-logo-main.png" alt="logo"></div><div class="sidebar__menu"><ul><li class="sidebar__menu__item " id="dashboard"><a href="/en"><img src="/assets/icons/dashboard.svg" alt="Dashboard"><span>Dashboard</span></a></li><li class="sidebar__menu__item " id="projectCenter"><a href="/en/project-center"><img src="/assets/icons/project-center.svg" alt="Project Center"><span>Project Center</span></a></li><li class="sidebar__menu__item sidebar__menu__item--active" id="projectPipeline"><a href="/en/project-pipeline"><img src="/assets/icons/project-pipeline-active.svg" alt="Project Pipeline"><span>Project Pipeline</span></a></li><li class="sidebar__menu__item " id="reports"><a href="/en/reports"><img src="/assets/icons/reports.svg" alt="Reports"><span>Reports</span></a></li><li class="sidebar__menu__item " id="formsAndTemplates"><a href="/en/forms-and-templates"><img src="/assets/icons/forms-and-templates.svg" alt="Forms and Templates"><span>Forms and Templates</span></a></li><li class="sidebar__menu__item " id="delegation"><a href="/en/delegation"><img src="/assets/icons/delegation.svg" alt="Delegation"><span>Delegation</span></a></li><li class="sidebar__menu__item " id="weeklyWorks"><a href="/en/weekly-works"><img src="/assets/icons/weekly-works.svg" alt="Weekly Works"><span>Weekly Works</span></a></li><li class="sidebar__menu__item " id="initiatives"><a href="/en/initiatives"><img src="/assets/icons/initiatives.svg" alt="Initiatives"><span>Initiatives</span></a></li><li class="sidebar__menu__item " id="settings"><a href="/en"><img src="/assets/icons/settings.svg" alt="Settings"><span>Settings</span></a></li><li class="sidebar__menu__item " id="logout"><a href="/en"><img src="/assets/icons/logout.svg" alt="Sign Out"><span>Sign Out</span></a></li></ul></div></section><div class="main__content"><section class="topbar"><div class="topbar__breadcrumbList"><a href="/en/new-project" class="topbar__breadcrumbList__item--first">Add Project Information</a></div><div class="topbar__search"><button class="topbar__search__button"><img src="/assets/icons/search.svg" alt="search"></button><input type="text" class="topbar__search__input" placeholder="Search Here ..."></div><div class="topbar__group"><div class="topbar__notifications"><div class="topbar__notifications__icon not-read"><img src="/assets/icons/notification.svg" alt="notification"></div><div class="topbar__notifications__modal hidden"><ul class="topbar__notifications__list"><li class="topbar__notifications__item "><div class="topbar__notifications__item__top"><h3 class="topbar__notifications__item__top__title">Notification title</h3><div class="topbar__notifications__item__top__remove"><img src="/assets/icons/close.svg" alt="close"></div></div><p class="topbar__notifications__item__message">Notification message</p></li><li class="topbar__notifications__item success"><div class="topbar__notifications__item__top"><h3 class="topbar__notifications__item__top__title">Notification title</h3><div class="topbar__notifications__item__top__remove"><img src="/assets/icons/close.svg" alt="close"></div></div><p class="topbar__notifications__item__message">Notification message</p></li><li class="topbar__notifications__item warning"><div class="topbar__notifications__item__top"><h3 class="topbar__notifications__item__top__title">Notification title</h3><div class="topbar__notifications__item__top__remove"><img src="/assets/icons/close.svg" alt="close"></div></div><p class="topbar__notifications__item__message">Notification message</p></li></ul></div></div><div class="topbar__user"><div class="topbar__user__actions"><div class="topbar__user__arrow"><img src="/assets/icons/arrow.svg" alt="arrow"></div><ul class="topbar__user__menu hidden"><li class="topbar__user__menu__item"><a href="#" class="topbar__user__menu__item__link">Profile</a></li><li class="topbar__user__menu__item"><a href="/ar/new-project/" class="topbar__user__menu__item__link">العربية</a></li></ul></div><div class="topbar__user__info"><div class="topbar__user__info__name">Employee Name</div><div class="topbar__user__info__position">Admin</div></div></div></div></section><script src="/assets/js/topbar.js"></script><section class="main__content__box"><div class="new-project"><form class="new-project__form"><div class="new-project__section"><h2 class="new-project__section-title">Project Information</h2><div class="new-project__section-fields"><div class="form-group w-20"><label for="projectName">Project Name</label><div class="input-group"><input type="text" class="form-control" id="projectName" name="projectName" placeholder="Project Name"></div></div><script>(function(){const name = "projectName";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectNumber">Project Number</label><div class="input-group"><input type="number" class="form-control" id="projectNumber" name="projectNumber" placeholder="Project Number"></div></div><script>(function(){const name = "projectNumber";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectPurpose">Project Purpose</label><div class="input-group"><input type="text" class="form-control" id="projectPurpose" name="projectPurpose" placeholder="Project Purpose"></div></div><script>(function(){const name = "projectPurpose";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectType">Project Type</label><div class="input-group"><select class="form-control" id="projectType" name="projectType"><option value="1">Project Type 1</option><option value="2">Project Type 2</option><option value="3">Project Type 3</option></select></div></div><div class="form-group w-20"><label for="projectClassification">Project Classification</label><div class="input-group"><select class="form-control" id="projectClassification" name="projectClassification"><option value="1">Project Classification 1</option><option value="2">Project Classification 2</option><option value="3">Project Classification 3</option></select></div></div><div class="form-group w-20"><label for="projectSection">Project Section</label><div class="input-group"><input type="text" class="form-control" id="projectSection" name="projectSection" placeholder="Project Section"></div></div><script>(function(){const name = "projectSection";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectInitiative">Project Initiative</label><div class="input-group"><input type="text" class="form-control" id="projectInitiative" name="projectInitiative" placeholder="Project Initiative"></div></div><script>(function(){const name = "projectInitiative";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="thePointers">The Pointers</label><div class="input-group"><input type="text" class="form-control" id="thePointers" name="thePointers" placeholder="The Pointers"></div></div><script>(function(){const name = "thePointers";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="startDate">Start Date</label><div class="input-group"><input type="date" class="form-control" id="startDate" name="startDate" placeholder="Start Date"></div></div><script>(function(){const name = "startDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="endDate">End Date</label><div class="input-group"><input type="date" class="form-control" id="endDate" name="endDate" placeholder="End Date"></div></div><script>(function(){const name = "endDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script></div></div><div class="new-project__section"><h2 class="new-project__section-title">Project Owner Information</h2><div class="new-project__section-fields"><div class="form-group w-20"><label for="year">Year</label><div class="input-group"><select class="form-control" id="year" name="year"><option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option></select></div></div><div class="form-group w-20"><label for="projectValue">Project Value</label><div class="input-group"><select class="form-control" id="projectValue" name="projectValue"><option value="1">Project Value 1</option><option value="2">Project Value 2</option><option value="3">Project Value 3</option></select></div></div><div class="form-group w-20"><label for="launchingDateToThePlatform">Launching Date To The Platform</label><div class="input-group"><input type="date" class="form-control" id="launchingDateToThePlatform" name="launchingDateToThePlatform" placeholder="Launching Date To The Platform"></div></div><script>(function(){const name = "launchingDateToThePlatform";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="officializationDate">Officialization Date</label><div class="input-group"><input type="date" class="form-control" id="officializationDate" name="officializationDate" placeholder="Officialization Date"></div></div><script>(function(){const name = "officializationDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="signTheContractDate">Sign The Contract Date</label><div class="input-group"><input type="date" class="form-control" id="signTheContractDate" name="signTheContractDate" placeholder="Sign The Contract Date"></div></div><script>(function(){const name = "signTheContractDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectManagerName">Project Manager Name</label><div class="input-group"><input type="text" class="form-control" id="projectManagerName" name="projectManagerName" placeholder="Project Manager Name"></div></div><script>(function(){const name = "projectManagerName";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="replacementManagerName">Replacement Manager Name</label><div class="input-group"><input type="text" class="form-control" id="replacementManagerName" name="replacementManagerName" placeholder="Replacement Manager Name"></div></div><script>(function(){const name = "replacementManagerName";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="ownershipManagementOfTheProject">Ownership Management Of The Project</label><div class="input-group"><input type="text" class="form-control" id="ownershipManagementOfTheProject" name="ownershipManagementOfTheProject" placeholder="Ownership Management Of The Project"></div></div><script>(function(){const name = "ownershipManagementOfTheProject";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="theTechnicalDepartment">The Technical Department</label><div class="input-group"><input type="text" class="form-control" id="theTechnicalDepartment" name="theTechnicalDepartment" placeholder="The Technical Department"></div></div><script>(function(){const name = "theTechnicalDepartment";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script></div></div><div class="new-project__section"><h2 class="new-project__section-title">Beneficiary information</h2><div class="new-project__section-fields"><div class="form-group w-20"><label for="implementingBody">Implementing Body</label><div class="input-group"><input type="text" class="form-control" id="implementingBody" name="implementingBody" placeholder="Implementing Body"></div></div><script>(function(){const name = "implementingBody";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="theBeneficiariesOfTheProject">The Beneficiaries Of The Project</label><div class="input-group"><input type="text" class="form-control" id="theBeneficiariesOfTheProject" name="theBeneficiariesOfTheProject" placeholder="The Beneficiaries Of The Project"></div></div><script>(function(){const name = "theBeneficiariesOfTheProject";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="attachTheContractAndAwardLetter">Attach The Contract And Award Letter</label><div class="input-group"><div class="custom-file"><input type="file" class="custom-file-input" id="attachTheContractAndAwardLetter" name="attachTheContractAndAwardLetter" placeholder="Attach The Contract And Award Letter"></div><div class="input-group-append" id="attachTheContractAndAwardLetter-button"><img src="/assets/icons/folder.svg"></div></div></div><script>(function(){const name = "attachTheContractAndAwardLetter";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="security">Security</label><div class="input-group"><select class="form-control" id="security" name="security"><option value="1">Security 1</option><option value="2">Security 2</option><option value="3">Security 3</option></select></div></div><div class="form-group w-20"><label for="durationOfTechnicalSupport">Duration Of Technical Support</label><div class="input-group"><select class="form-control" id="durationOfTechnicalSupport" name="durationOfTechnicalSupport"><option value="1">Duration Of Technical Support 1</option><option value="2">Duration Of Technical Support 2</option><option value="3">Duration Of Technical Support 3</option></select></div></div><div class="form-group w-20"><label for="licenseName">License Name</label><div class="input-group"><select class="form-control" id="licenseName" name="licenseName"><option value="1">License Name 1</option><option value="2">License Name 2</option><option value="3">License Name 3</option></select></div></div><div class="form-group w-20"><label for="licenseExpirationDate">License Expiration Date</label><div class="input-group"><input type="date" class="form-control" id="licenseExpirationDate" name="licenseExpirationDate" placeholder="License Expiration Date"></div></div><script>(function(){const name = "licenseExpirationDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="licenseRenewalDate">License Renewal Date</label><div class="input-group"><input type="date" class="form-control" id="licenseRenewalDate" name="licenseRenewalDate" placeholder="License Renewal Date"></div></div><script>(function(){const name = "licenseRenewalDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="dateOfSendingTheBrochure">Date Of Sending The Brochure</label><div class="input-group"><input type="date" class="form-control" id="dateOfSendingTheBrochure" name="dateOfSendingTheBrochure" placeholder="Date Of Sending The Brochure"></div></div><script>(function(){const name = "dateOfSendingTheBrochure";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script></div></div><div class="new-project__actions"><button class="new-project__actions__back">Back</button><button class="new-project__actions__submit">Submit</button></div></form></div></section></div></main></body></html>

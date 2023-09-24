@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="ar"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="/assets/icons/ADF-logo.svg" type="image/x-icon"><title>صندوق التنمية الزراعية: اضافة مشروع</title><link rel="stylesheet" href="/assets/asset..css" /></head><body><main class="main"><section class="sidebar"><div class="sidebar__logo"><img src="/assets/images/ADF-logo-main.png" alt="logo"></div><div class="sidebar__menu"><ul><li class="sidebar__menu__item " id="dashboard"><a href="/ar"><img src="/assets/icons/dashboard.svg" alt="لوحة التحكم"><span>لوحة التحكم</span></a></li><li class="sidebar__menu__item " id="projectCenter"><a href="/ar/project-center"><img src="/assets/icons/project-center.svg" alt="مركز المشاريع"><span>مركز المشاريع</span></a></li><li class="sidebar__menu__item sidebar__menu__item--active" id="projectPipeline"><a href="/ar/project-pipeline"><img src="/assets/icons/project-pipeline-active.svg" alt="خطة المشاريع"><span>خطة المشاريع</span></a></li><li class="sidebar__menu__item " id="reports"><a href="/ar/reports"><img src="/assets/icons/reports.svg" alt="التقارير"><span>التقارير</span></a></li><li class="sidebar__menu__item " id="formsAndTemplates"><a href="/ar/forms-and-templates"><img src="/assets/icons/forms-and-templates.svg" alt="النماذج والقوالب"><span>النماذج والقوالب</span></a></li><li class="sidebar__menu__item " id="delegation"><a href="/ar/delegation"><img src="/assets/icons/delegation.svg" alt="التفويض"><span>التفويض</span></a></li><li class="sidebar__menu__item " id="weeklyWorks"><a href="/ar/weekly-works"><img src="/assets/icons/weekly-works.svg" alt="الاعمال الاسبوعية"><span>الاعمال الاسبوعية</span></a></li><li class="sidebar__menu__item " id="initiatives"><a href="/ar/initiatives"><img src="/assets/icons/initiatives.svg" alt="المبادرات"><span>المبادرات</span></a></li><li class="sidebar__menu__item " id="settings"><a href="/ar"><img src="/assets/icons/settings.svg" alt="الاعدادات"><span>الاعدادات</span></a></li><li class="sidebar__menu__item " id="logout"><a href="/ar"><img src="/assets/icons/logout.svg" alt="تسجيل الخروج"><span>تسجيل الخروج</span></a></li></ul></div></section><div class="main__content"><section class="topbar"><div class="topbar__breadcrumbList"><a href="/ar/new-project" class="topbar__breadcrumbList__item--first">اضافة معلومات المشروع</a></div><div class="topbar__search"><button class="topbar__search__button"><img src="/assets/icons/search.svg" alt="search"></button><input type="text" class="topbar__search__input" placeholder="ابحث هنا ..."></div><div class="topbar__group"><div class="topbar__notifications"><div class="topbar__notifications__icon not-read"><img src="/assets/icons/notification.svg" alt="notification"></div><div class="topbar__notifications__modal hidden"><ul class="topbar__notifications__list"><li class="topbar__notifications__item "><div class="topbar__notifications__item__top"><h3 class="topbar__notifications__item__top__title">عنوان الإشعار</h3><div class="topbar__notifications__item__top__remove"><img src="/assets/icons/close.svg" alt="close"></div></div><p class="topbar__notifications__item__message">نص الإشعار</p></li><li class="topbar__notifications__item success"><div class="topbar__notifications__item__top"><h3 class="topbar__notifications__item__top__title">عنوان الإشعار</h3><div class="topbar__notifications__item__top__remove"><img src="/assets/icons/close.svg" alt="close"></div></div><p class="topbar__notifications__item__message">نص الإشعار</p></li><li class="topbar__notifications__item warning"><div class="topbar__notifications__item__top"><h3 class="topbar__notifications__item__top__title">عنوان الإشعار</h3><div class="topbar__notifications__item__top__remove"><img src="/assets/icons/close.svg" alt="close"></div></div><p class="topbar__notifications__item__message">نص الإشعار</p></li></ul></div></div><div class="topbar__user"><div class="topbar__user__actions"><div class="topbar__user__arrow"><img src="/assets/icons/arrow.svg" alt="arrow"></div><ul class="topbar__user__menu hidden"><li class="topbar__user__menu__item"><a href="#" class="topbar__user__menu__item__link">الملف الشخصي</a></li><li class="topbar__user__menu__item"><a href="/en/new-project/" class="topbar__user__menu__item__link">English</a></li></ul></div><div class="topbar__user__info"><div class="topbar__user__info__name">اسم الموظف</div><div class="topbar__user__info__position">مدير</div></div></div></div></section><script src="/assets/js/topbar.js"></script><section class="main__content__box"><div class="new-project"><form class="new-project__form"><div class="new-project__section"><h2 class="new-project__section-title">معلومات المشروع الاساسية</h2><div class="new-project__section-fields"><div class="form-group w-20"><label for="projectName">اسم المشروع</label><div class="input-group"><input type="text" class="form-control" id="projectName" name="projectName" placeholder="اسم المشروع"></div></div><script>(function(){const name = "projectName";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectNumber">رقم المشروع</label><div class="input-group"><input type="number" class="form-control" id="projectNumber" name="projectNumber" placeholder="رقم المشروع"></div></div><script>(function(){const name = "projectNumber";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectPurpose">الهدف من المشروع</label><div class="input-group"><input type="text" class="form-control" id="projectPurpose" name="projectPurpose" placeholder="الهدف من المشروع"></div></div><script>(function(){const name = "projectPurpose";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectType">نوع المشروع</label><div class="input-group"><select class="form-control" id="projectType" name="projectType"><option value="1">نوع المشروع 1</option><option value="2">نوع المشروع 2</option><option value="3">نوع المشروع 3</option></select></div></div><div class="form-group w-20"><label for="projectClassification">تصنيف المشروع</label><div class="input-group"><select class="form-control" id="projectClassification" name="projectClassification"><option value="1">تصنيف المشروع 1</option><option value="2">تصنيف المشروع 2</option><option value="3">تصنيف المشروع 3</option></select></div></div><div class="form-group w-20"><label for="projectSection">البند التابع للمشروع</label><div class="input-group"><input type="text" class="form-control" id="projectSection" name="projectSection" placeholder="البند التابع للمشروع"></div></div><script>(function(){const name = "projectSection";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectInitiative">المبادرة التابعة للمشروع</label><div class="input-group"><input type="text" class="form-control" id="projectInitiative" name="projectInitiative" placeholder="المبادرة التابعة للمشروع"></div></div><script>(function(){const name = "projectInitiative";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="thePointers">المؤشرات</label><div class="input-group"><input type="text" class="form-control" id="thePointers" name="thePointers" placeholder="المؤشرات"></div></div><script>(function(){const name = "thePointers";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="startDate">تاريخ التنفيذ</label><div class="input-group"><input type="date" class="form-control" id="startDate" name="startDate" placeholder="تاريخ التنفيذ"></div></div><script>(function(){const name = "startDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="endDate">تاريخ الانتهاء</label><div class="input-group"><input type="date" class="form-control" id="endDate" name="endDate" placeholder="تاريخ الانتهاء"></div></div><script>(function(){const name = "endDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script></div></div><div class="new-project__section"><h2 class="new-project__section-title">معلومات المالك</h2><div class="new-project__section-fields"><div class="form-group w-20"><label for="year">السنة</label><div class="input-group"><select class="form-control" id="year" name="year"><option value="1">السنة 1</option><option value="2">السنة 2</option><option value="3">السنة 3</option></select></div></div><div class="form-group w-20"><label for="projectValue">قيمة المشروع</label><div class="input-group"><select class="form-control" id="projectValue" name="projectValue"><option value="1">قيمة المشروع 1</option><option value="2">قيمة المشروع 2</option><option value="3">قيمة المشروع 3</option></select></div></div><div class="form-group w-20"><label for="launchingDateToThePlatform">تاريخ الانطلاق في المنصة</label><div class="input-group"><input type="date" class="form-control" id="launchingDateToThePlatform" name="launchingDateToThePlatform" placeholder="تاريخ الانطلاق في المنصة"></div></div><script>(function(){const name = "launchingDateToThePlatform";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="officializationDate">تاريخ التثبيت</label><div class="input-group"><input type="date" class="form-control" id="officializationDate" name="officializationDate" placeholder="تاريخ التثبيت"></div></div><script>(function(){const name = "officializationDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="signTheContractDate">تاريخ توقيع العقد</label><div class="input-group"><input type="date" class="form-control" id="signTheContractDate" name="signTheContractDate" placeholder="تاريخ توقيع العقد"></div></div><script>(function(){const name = "signTheContractDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="projectManagerName">اسم مدير المشروع</label><div class="input-group"><input type="text" class="form-control" id="projectManagerName" name="projectManagerName" placeholder="اسم مدير المشروع"></div></div><script>(function(){const name = "projectManagerName";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="replacementManagerName">اسم مدير الاستبدال</label><div class="input-group"><input type="text" class="form-control" id="replacementManagerName" name="replacementManagerName" placeholder="اسم مدير الاستبدال"></div></div><script>(function(){const name = "replacementManagerName";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="ownershipManagementOfTheProject">ادارة ملكية المشروع</label><div class="input-group"><input type="text" class="form-control" id="ownershipManagementOfTheProject" name="ownershipManagementOfTheProject" placeholder="ادارة ملكية المشروع"></div></div><script>(function(){const name = "ownershipManagementOfTheProject";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="theTechnicalDepartment">الادارة الفنية</label><div class="input-group"><input type="text" class="form-control" id="theTechnicalDepartment" name="theTechnicalDepartment" placeholder="الادارة الفنية"></div></div><script>(function(){const name = "theTechnicalDepartment";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script></div></div><div class="new-project__section"><h2 class="new-project__section-title">معلومات المستفيد</h2><div class="new-project__section-fields"><div class="form-group w-20"><label for="implementingBody">الجهة المنفذة</label><div class="input-group"><input type="text" class="form-control" id="implementingBody" name="implementingBody" placeholder="الجهة المنفذة"></div></div><script>(function(){const name = "implementingBody";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="theBeneficiariesOfTheProject">المستفيدين من المشروع</label><div class="input-group"><input type="text" class="form-control" id="theBeneficiariesOfTheProject" name="theBeneficiariesOfTheProject" placeholder="المستفيدين من المشروع"></div></div><script>(function(){const name = "theBeneficiariesOfTheProject";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="attachTheContractAndAwardLetter">ارفاق العقد وخطاب الاعتماد</label><div class="input-group"><div class="custom-file"><input type="file" class="custom-file-input" id="attachTheContractAndAwardLetter" name="attachTheContractAndAwardLetter" placeholder="ارفاق العقد وخطاب الاعتماد"></div><div class="input-group-append" id="attachTheContractAndAwardLetter-button"><img src="/assets/icons/folder.svg"></div></div></div><script>(function(){const name = "attachTheContractAndAwardLetter";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="security">الضمان</label><div class="input-group"><select class="form-control" id="security" name="security"><option value="1">الضمان 1</option><option value="2">الضمان 2</option><option value="3">الضمان 3</option></select></div></div><div class="form-group w-20"><label for="durationOfTechnicalSupport">مدة الدعم الفني</label><div class="input-group"><select class="form-control" id="durationOfTechnicalSupport" name="durationOfTechnicalSupport"><option value="1">مدة الدعم الفني 1</option><option value="2">مدة الدعم الفني 2</option><option value="3">مدة الدعم الفني 3</option></select></div></div><div class="form-group w-20"><label for="licenseName">اسم الترخيص</label><div class="input-group"><select class="form-control" id="licenseName" name="licenseName"><option value="1">اسم الترخيص 1</option><option value="2">اسم الترخيص 2</option><option value="3">اسم الترخيص 3</option></select></div></div><div class="form-group w-20"><label for="licenseExpirationDate">تاريخ انتهاء الترخيص</label><div class="input-group"><input type="date" class="form-control" id="licenseExpirationDate" name="licenseExpirationDate" placeholder="تاريخ انتهاء الترخيص"></div></div><script>(function(){const name = "licenseExpirationDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="licenseRenewalDate">تاريخ تجديد الترخيص</label><div class="input-group"><input type="date" class="form-control" id="licenseRenewalDate" name="licenseRenewalDate" placeholder="تاريخ تجديد الترخيص"></div></div><script>(function(){const name = "licenseRenewalDate";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script><div class="form-group w-20"><label for="dateOfSendingTheBrochure">تاريخ ارسال الكتيب</label><div class="input-group"><input type="date" class="form-control" id="dateOfSendingTheBrochure" name="dateOfSendingTheBrochure" placeholder="تاريخ ارسال الكتيب"></div></div><script>(function(){const name = "dateOfSendingTheBrochure";
+
+  const input = document.getElementById(name);
+  const button = document.getElementById(`${name}-button`);
+  const label = document.querySelector(".custom-file-label");
+  
+    if (input.type === "file") {
+      button.addEventListener("click", () => {
+        console.log("clicked");
+        input.click();
+      });
+    }
+})();</script></div></div><div class="new-project__actions"><button class="new-project__actions__back">رجوع</button><button class="new-project__actions__submit">ارسال</button></div></form></div></section></div></main></body></html>
