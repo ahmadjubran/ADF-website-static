@@ -45,3 +45,45 @@ window.addEventListener("click", (e) => {
     userMenu.classList.add("hidden");
   }
 });
+
+const delegateModelStep1 = document.querySelector(".topbar__delegate__model.step1");
+const delegateModelStep2 = document.querySelector(".topbar__delegate__model.step2");
+const delegateButton = document.querySelector(".topbar__user__menu__item__link__button");
+const delegateCancelButtons = document.querySelectorAll(".topbar__delegate__model__actions__button--cancel");
+const delegateNextButtons = document.querySelectorAll(".topbar__delegate__model__actions__button--next");
+const delegateCloseButtons = document.querySelectorAll(".topbar__delegate__model__header__close");
+
+delegateButton.addEventListener("click", () => {
+  delegateModelStep1.classList.remove("hidden");
+});
+
+delegateCancelButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    delegateModelStep1.classList.add("hidden");
+    delegateModelStep2.classList.add("hidden");
+  });
+});
+
+delegateNextButtons[0].addEventListener("click", () => {
+  delegateModelStep1.classList.add("hidden");
+  delegateModelStep2.classList.remove("hidden");
+});
+
+delegateNextButtons[1].addEventListener("click", () => {
+  delegateModelStep1.classList.add("hidden");
+  delegateModelStep2.classList.add("hidden");
+});
+
+window.addEventListener("click", (e) => {
+  if (!e.target.closest(".topbar__delegate__model") && !e.target.closest(".topbar__user__menu__item__link__button")) {
+    delegateModelStep1.classList.add("hidden");
+    delegateModelStep2.classList.add("hidden");
+  }
+});
+
+delegateCloseButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    delegateModelStep1.classList.add("hidden");
+    delegateModelStep2.classList.add("hidden");
+  });
+});
