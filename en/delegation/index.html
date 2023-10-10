@@ -61,4 +61,20 @@ const observer = new MutationObserver((mutations) => {
 observer.observe(document.getElementById(listId), {
   attributes: true,
 });
-})();</script></div><script src="/assets/js/menu.js"></script></section></div></main></body></html>
+})();</script><script>
+  const weeklyWorksFilterStatusItems = document.querySelectorAll(".weekly-works__filter-status-item");
+  const weeklyWorksFilterStatusItemsLabels = document.querySelectorAll(".weekly-works__filter-status-item-label");
+
+  weeklyWorksFilterStatusItems.forEach((item, i) => {
+    item.addEventListener("click", () => {
+      weeklyWorksFilterStatusItems.forEach((item) => {
+        item.classList.remove("active");
+      });
+      item.classList.add("active");
+      weeklyWorksFilterStatusItemsLabels.forEach((label) => {
+        label.classList.remove("active");
+      });
+      weeklyWorksFilterStatusItemsLabels[i].classList.add("active");
+    });
+  });
+</script></div><script src="/assets/js/menu.js"></script></section></div></main></body></html>
